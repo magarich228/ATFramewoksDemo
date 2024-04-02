@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4BC3B77F-DE9C-4D85-94CB-F4B4696535BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AT", "AT", "{429345AF-091C-4CFC-8B1C-3395BD70863D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.Tests", "src\AT\AT.Tests\AT.Tests.csproj", "{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.Common", "src\AT\AT.Common\AT.Common.csproj", "{29FF8D9B-CF1B-49F3-A606-E106F31500E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taurus", "Taurus", "{909880B1-1E87-495E-BAF9-8D33EC0DD42E}"
+	ProjectSection(SolutionItems) = preProject
+		src\Taurus\test-examples.yaml = src\Taurus\test-examples.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{681279D5-D108-459A-B38F-44CB8DF03982}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{429345AF-091C-4CFC-8B1C-3395BD70863D} = {4BC3B77F-DE9C-4D85-94CB-F4B4696535BE}
+		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
+		{29FF8D9B-CF1B-49F3-A606-E106F31500E9} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
+		{909880B1-1E87-495E-BAF9-8D33EC0DD42E} = {4BC3B77F-DE9C-4D85-94CB-F4B4696535BE}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29FF8D9B-CF1B-49F3-A606-E106F31500E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29FF8D9B-CF1B-49F3-A606-E106F31500E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29FF8D9B-CF1B-49F3-A606-E106F31500E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29FF8D9B-CF1B-49F3-A606-E106F31500E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
