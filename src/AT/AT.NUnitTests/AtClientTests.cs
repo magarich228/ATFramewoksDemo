@@ -7,12 +7,12 @@ using Newtonsoft.Json.Linq;
 using NUnit.Allure.Attributes;
 using NUnit.Allure.Core;
 
-namespace AT.Tests;
+namespace AT.NUnitTests;
 
 [TestFixture]
 [AllureNUnit]
 [AllureSuite("Test examples")]
-public class TestExamples
+public class AtClientTests
 {
     private IAtClient AtClient { get; set; } = null!;
 
@@ -98,6 +98,6 @@ public class TestExamples
                 "TestResult");
 
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
-        StringAssert.AreEqualIgnoringCase(testResult, expectedTestResult);
+        StringAssert.AreEqualIgnoringCase(expectedTestResult, testResult);
     }
 }
