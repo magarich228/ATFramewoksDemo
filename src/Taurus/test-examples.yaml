@@ -3,4 +3,4 @@ execution:
     concurrency: 2
     iterations: 5
     scenario:
-      script: ../AT/AT.Tests/bin/Release/netcoreapp3.1/publish/AT.Tests.dll
+      script: ..\AT\AT.NUnitTests\bin\Debug\net8.0\AT.NUnitTests.dll

@@ -30,16 +30,16 @@ public class AtClientTests
     {
         Console.WriteLine("Allure Report info:");
         Console.WriteLine("Cur dir:" + Directory.GetCurrentDirectory());
-
+    
         var allureStartInfo = new ProcessStartInfo("allure", "generate")
         {
             UseShellExecute = true,
             WindowStyle = ProcessWindowStyle.Hidden
         };
-
+    
         using var allure = Process.Start(allureStartInfo) ??
                            throw new ProcessExitedException("Не удалось запустить процесс генерации отчета.");
-
+    
         allure.Exited += (sender, args) =>
         {
             if (Directory.Exists("allure-report"))
@@ -64,7 +64,7 @@ public class AtClientTests
 
         var response = await AtClient.RunTest(testId, "CorLibBundleAutoTestExample", publishers,
             new { Param1 = "test string" });
-
+        
         Assert.NotNull(response);
 
         if (response is not null)
@@ -98,6 +98,6 @@ public class AtClientTests
                 "TestResult");
 
         Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
-        StringAssert.AreEqualIgnoringCase(expectedTestResult, testResult);
+        Assert.That(testResult, Is.EqualTo(expectedTestResult).IgnoreCase);
     }
 }
