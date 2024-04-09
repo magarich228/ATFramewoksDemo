@@ -1,1 +1,0 @@
-#docker run -it --rm -v C:\Users\k.groshev\RiderProjects\TaurusPrototype\:/taurus blazemeter/taurus ./test-examples.yaml
