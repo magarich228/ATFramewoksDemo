@@ -48,7 +48,7 @@ public class AtClientStepDefinitions
                     "TestResult");
 
             Console.WriteLine(testResult);
-            StringAssert.AreEqualIgnoringCase(expectedTestResult, testResult);
+            Assert.That(testResult, Is.EqualTo(expectedTestResult).IgnoreCase);
         }
     }
 }
