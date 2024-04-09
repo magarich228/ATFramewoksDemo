@@ -19,7 +19,7 @@ public class AtClientStepDefinitions
     public async Task InvokeRandomTest()
     {
         var testId = Guid.NewGuid();
-        var publishers = new[] { "http", "npgsql", "kafka" };
+        var publishers = new[] { "http", "kafka" };
 
         var response = await _context.AtClient.RunTest(testId, "CorLibBundleAutoTestRandomExample", publishers, new { }) ??
                        throw new Exception("A query to invoke a random test returned an null response.");

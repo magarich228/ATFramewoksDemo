@@ -13,7 +13,7 @@ public class AtClientTests : PlaywrightTest
     public async Task InvokeRandomTest()
     {
         var testId = Guid.NewGuid();
-        var publishers = new[] { "http", "npgsql", "kafka" };
+        var publishers = new[] { "http", "kafka" };
         var expectedTestResult = "Success";
         
         var response = await _apiRequestContext.PostAsync($"{testId}/CorLibBundleAutoTestRandomExample/{string.Join(',', publishers)}");

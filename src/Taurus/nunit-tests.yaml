@@ -1,0 +1,6 @@
+execution:
+  - executor: nunit
+    concurrency: 2
+    iterations: 5
+    scenario:
+      script: ..\AT\AT.NUnitTests\bin\Debug\net8.0\AT.NUnitTests.dll

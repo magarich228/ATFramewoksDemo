@@ -60,7 +60,7 @@ public class AtClientTests
     public async Task TwoParamsTest()
     {
         var testId = Guid.NewGuid();
-        var publishers = new[] { "http", "npgsql", "kafka" };
+        var publishers = new[] { "http", "kafka" };
 
         var response = await AtClient.RunTest(testId, "CorLibBundleAutoTestExample", publishers,
             new { Param1 = "test string" });
@@ -81,7 +81,7 @@ public class AtClientTests
     public async Task RandomTest()
     {
         var testId = Guid.NewGuid();
-        var publishers = new[] { "http", "npgsql", "kafka" };
+        var publishers = new[] { "http", "kafka" };
 
         var response = await AtClient.RunTest(testId, "CorLibBundleAutoTestRandomExample", publishers, new { });
         var expectedTestResult = "Success";

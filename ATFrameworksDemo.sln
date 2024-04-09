@@ -10,8 +10,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.Common", "src\AT\AT.Comm
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taurus", "Taurus", "{909880B1-1E87-495E-BAF9-8D33EC0DD42E}"
 	ProjectSection(SolutionItems) = preProject
-		src\Taurus\test-examples.yaml = src\Taurus\test-examples.yaml
 		src\Taurus\test-examples-run.ps1 = src\Taurus\test-examples-run.ps1
+		src\Taurus\bd-tests.yaml = src\Taurus\bd-tests.yaml
+		src\Taurus\nunit-tests.yaml = src\Taurus\nunit-tests.yaml
+		src\Taurus\playwright-tests.yaml = src\Taurus\playwright-tests.yaml
+		src\Taurus\specflow-tests.yaml = src\Taurus\specflow-tests.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{681279D5-D108-459A-B38F-44CB8DF03982}"
