@@ -6,3 +6,7 @@ riderModule.iml
 .idea/
 *.DotSettings.user
 .vs/
+!src/Taurus/configs
+src/Taurus/*
+*.pubxml
+*.pubxml.user

@@ -9,12 +9,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.Common", "src\AT\AT.Common\AT.Common.csproj", "{29FF8D9B-CF1B-49F3-A606-E106F31500E9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Taurus", "Taurus", "{909880B1-1E87-495E-BAF9-8D33EC0DD42E}"
-	ProjectSection(SolutionItems) = preProject
-		src\Taurus\bd-tests.yaml = src\Taurus\bd-tests.yaml
-		src\Taurus\nunit-tests.yaml = src\Taurus\nunit-tests.yaml
-		src\Taurus\playwright-tests.yaml = src\Taurus\playwright-tests.yaml
-		src\Taurus\specflow-tests.yaml = src\Taurus\specflow-tests.yaml
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{681279D5-D108-459A-B38F-44CB8DF03982}"
 	ProjectSection(SolutionItems) = preProject
@@ -26,6 +20,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.BDTests", "src\AT\AT.BDTests\AT.BDTests.csproj", "{0898738D-C473-466C-9BD3-8C2EC9A9D3FA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.PlaywrightTests", "src\AT\AT.PlaywrightTests\AT.PlaywrightTests.csproj", "{491CE818-4E96-4F13-B8FB-4C0B7CB10204}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{E30A46B1-22E0-470F-9597-36C9695E8613}"
+	ProjectSection(SolutionItems) = preProject
+		src\Taurus\bd-tests.yaml = src\Taurus\bd-tests.yaml
+		src\Taurus\nunit-tests.yaml = src\Taurus\nunit-tests.yaml
+		src\Taurus\playwright-tests.yaml = src\Taurus\playwright-tests.yaml
+		src\Taurus\specflow-tests.yaml = src\Taurus\specflow-tests.yaml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +42,7 @@ Global
 		{230835BF-99E1-4BFB-AE9C-A5CE5E422375} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
 		{0898738D-C473-466C-9BD3-8C2EC9A9D3FA} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
 		{491CE818-4E96-4F13-B8FB-4C0B7CB10204} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
+		{E30A46B1-22E0-470F-9597-36C9695E8613} = {909880B1-1E87-495E-BAF9-8D33EC0DD42E}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
