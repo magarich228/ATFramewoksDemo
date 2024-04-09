@@ -10,3 +10,6 @@ riderModule.iml
 src/Taurus/*
 *.pubxml
 *.pubxml.user
+src/RobotFramework/log.html
+src/RobotFramework/output.xml
+src/RobotFramework/report.html

@@ -29,6 +29,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{E30A
 		src\Taurus\specflow-tests.yaml = src\Taurus\specflow-tests.yaml
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoborFramework", "RoborFramework", "{990478BC-A701-4903-A64D-88E91A019A59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,7 @@ Global
 		{0898738D-C473-466C-9BD3-8C2EC9A9D3FA} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
 		{491CE818-4E96-4F13-B8FB-4C0B7CB10204} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
 		{E30A46B1-22E0-470F-9597-36C9695E8613} = {909880B1-1E87-495E-BAF9-8D33EC0DD42E}
+		{990478BC-A701-4903-A64D-88E91A019A59} = {4BC3B77F-DE9C-4D85-94CB-F4B4696535BE}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
