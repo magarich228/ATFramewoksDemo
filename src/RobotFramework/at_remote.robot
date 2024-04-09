@@ -5,5 +5,5 @@ Library    Remote    http://127.0.0.1:8270/NRobot/Server/Test/Keywords/AtClientK
 *** Test Cases ***
 Invoke Random Test1
     Remote.INVOKE RANDOMTEST
-    Remote.RESPONSE STATUSCODEIS    200
+    Remote.RESPONSE STATUSCODEIS    ,500
     Remote.RESPONSE TESTRESULTIS    Success

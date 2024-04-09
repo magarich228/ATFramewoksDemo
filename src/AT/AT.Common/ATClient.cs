@@ -1,35 +1,40 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using Newtonsoft.Json;
 
-namespace AT.Common;
-
-public class AtClientOptions
+namespace AT.Common
 {
-    public string AtHost { get; init; } = null!;
-}
-
-public class AtClient : IAtClient
-{
-    private readonly HttpClient _client;
-
-    public AtClient(
-        AtClientOptions options,
-        HttpClient client)
+    public class AtClientOptions
     {
-        var atHost = options.AtHost;
-        _client = client;
-
-        _client.BaseAddress = new Uri(atHost);
+        public string AtHost { get; init; } = null!;
     }
 
+    public class AtClient : IAtClient
+    {
+        private readonly HttpClient _client;
 
-    public async Task<HttpResponseMessage?> RunTest(Guid testId, string testType, IEnumerable<string> publishers, dynamic body) =>
-        await _client.PostAsync(
-            $"{testId}/{testType}/{string.Join(',', publishers)}", 
-            new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8));
-}
+        public AtClient(
+            AtClientOptions options,
+            HttpClient client)
+        {
+            var atHost = options.AtHost;
+            _client = client;
 
-public interface IAtClient
-{
-    Task<HttpResponseMessage?> RunTest(Guid testId, string testType, IEnumerable<string> publishers, dynamic body);
+            _client.BaseAddress = new Uri(atHost);
+        }
+
+
+        public async Task<HttpResponseMessage?> RunTest(Guid testId, string testType, IEnumerable<string> publishers, dynamic body) =>
+            await _client.PostAsync(
+                $"{testId}/{testType}/{string.Join(',', publishers)}", 
+                new StringContent(JsonConvert.SerializeObject(body), Encoding.UTF8));
+    }
+
+    public interface IAtClient
+    {
+        Task<HttpResponseMessage?> RunTest(Guid testId, string testType, IEnumerable<string> publishers, dynamic body);
+    }
 }

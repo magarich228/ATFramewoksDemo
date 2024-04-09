@@ -1,6 +1,7 @@
-﻿namespace AT.Common;
-
-public static class ConfigurationKeys
+﻿namespace AT.Common
 {
-    public const string AtHost = "AtHost";
+    public static class ConfigurationKeys
+    {
+        public const string AtHost = "AtHost";
+    }
 }

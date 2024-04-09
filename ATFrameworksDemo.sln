@@ -23,10 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.PlaywrightTests", "src\A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{E30A46B1-22E0-470F-9597-36C9695E8613}"
 	ProjectSection(SolutionItems) = preProject
-		src\Taurus\bd-tests.yaml = src\Taurus\bd-tests.yaml
-		src\Taurus\nunit-tests.yaml = src\Taurus\nunit-tests.yaml
-		src\Taurus\playwright-tests.yaml = src\Taurus\playwright-tests.yaml
-		src\Taurus\specflow-tests.yaml = src\Taurus\specflow-tests.yaml
+		src\Taurus\configs\bd-tests.yaml = src\Taurus\configs\bd-tests.yaml
+		src\Taurus\configs\nunit-tests.yaml = src\Taurus\configs\nunit-tests.yaml
+		src\Taurus\configs\playwright-tests.yaml = src\Taurus\configs\playwright-tests.yaml
+		src\Taurus\configs\specflow-tests.yaml = src\Taurus\configs\specflow-tests.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RobotFramework", "RobotFramework", "{990478BC-A701-4903-A64D-88E91A019A59}"
@@ -36,7 +36,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RobotFramework", "RobotFram
 		src\RobotFramework\atclient.py = src\RobotFramework\atclient.py
 		src\RobotFramework\AtclientLibrary.py = src\RobotFramework\AtclientLibrary.py
 		src\RobotFramework\AtclientLibraryNet.py = src\RobotFramework\AtclientLibraryNet.py
+		src\RobotFramework\requirements.txt = src\RobotFramework\requirements.txt
+		src\RobotFramework\at_random_test_net.robot = src\RobotFramework\at_random_test_net.robot
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.NUnitTests.NET5", "src\AT\AT.NUnitTests.NET5\AT.NUnitTests.NET5.csproj", "{ACD87103-5FB5-4997-9883-2E65E891E80E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,7 @@ Global
 		{491CE818-4E96-4F13-B8FB-4C0B7CB10204} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
 		{E30A46B1-22E0-470F-9597-36C9695E8613} = {909880B1-1E87-495E-BAF9-8D33EC0DD42E}
 		{990478BC-A701-4903-A64D-88E91A019A59} = {4BC3B77F-DE9C-4D85-94CB-F4B4696535BE}
+		{ACD87103-5FB5-4997-9883-2E65E891E80E} = {429345AF-091C-4CFC-8B1C-3395BD70863D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -75,5 +80,9 @@ Global
 		{491CE818-4E96-4F13-B8FB-4C0B7CB10204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{491CE818-4E96-4F13-B8FB-4C0B7CB10204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{491CE818-4E96-4F13-B8FB-4C0B7CB10204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACD87103-5FB5-4997-9883-2E65E891E80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACD87103-5FB5-4997-9883-2E65E891E80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACD87103-5FB5-4997-9883-2E65E891E80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACD87103-5FB5-4997-9883-2E65E891E80E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
