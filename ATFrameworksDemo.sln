@@ -29,7 +29,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "configs", "configs", "{E30A
 		src\Taurus\specflow-tests.yaml = src\Taurus\specflow-tests.yaml
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RoborFramework", "RoborFramework", "{990478BC-A701-4903-A64D-88E91A019A59}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RobotFramework", "RobotFramework", "{990478BC-A701-4903-A64D-88E91A019A59}"
+	ProjectSection(SolutionItems) = preProject
+		src\RobotFramework\at_random_test.robot = src\RobotFramework\at_random_test.robot
+		src\RobotFramework\at_remote.robot = src\RobotFramework\at_remote.robot
+		src\RobotFramework\atclient.py = src\RobotFramework\atclient.py
+		src\RobotFramework\AtclientLibrary.py = src\RobotFramework\AtclientLibrary.py
+		src\RobotFramework\AtclientLibraryNet.py = src\RobotFramework\AtclientLibraryNet.py
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
