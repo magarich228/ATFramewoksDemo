@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4BC3B77F-DE9C-4D85-94CB-F4B4696535BE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AT", "AT", "{429345AF-091C-4CFC-8B1C-3395BD70863D}"
+	ProjectSection(SolutionItems) = preProject
+		src\AT\at.bat = src\AT\at.bat
+		src\AT\docker-compose.yml = src\AT\docker-compose.yml
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AT.NUnitTests", "src\AT\AT.NUnitTests\AT.NUnitTests.csproj", "{83425CF9-35EF-4267-A4B6-6C089DCFDBC4}"
 EndProject
